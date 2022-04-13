@@ -1,11 +1,12 @@
 #include <stdio.h>
 /**
- * main -main
+ * main - Causes an infinite loop
  *
  * Return: 0
  */
 
 int main(void)
+{
 int i;
  printf("Infinite loop incoming :(\n");
 

@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * more_numbers - print 10 times the numbers, from 0 to 14 
+ * more_numbers - print 10 times the numbers, from 0 to 14
  *
  * Return: Always 0.
  */
@@ -29,7 +29,7 @@ secound_number = result % 10;
 _putchar (first_number + '0');
 }
 
-_putchar (secound_number = '0');
+_putchar (secound_number + '0');
 
 result++;
 }

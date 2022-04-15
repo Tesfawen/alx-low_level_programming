@@ -1,6 +1,5 @@
 #include <stdio.h>
 
-
 /**
  * main - prints Fizz for int divisible by 3 and Buzz for 5
  *
@@ -11,7 +10,7 @@ int main(void)
 {
 int i;
 
-for (i = 1; i<= 100; i++)
+for (i = 1; i <= 100; i++)
 {
 if (i % 3 == 0 && i % 5 != 0)
 {

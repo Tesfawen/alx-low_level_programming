@@ -1,39 +1,28 @@
 #include "main.h"
 /**
- * more_numbers - prints 10 times the number, from 0 to 14
+ * print_diagonal - prints diagonals
+ * @n: limit
  *
- * Return: Always 0.
+ * Return: void
  */
-void more_numbers(void)
-{
-int i;
-int first_number;
-int secound_number;
-int result;
 
-i = 0;
-result = 0;
-while (i < 10)
+void print_diagonal(int n)
 {
-while (result <= 14)
+int i, j;
+
+if (n > 0)
 {
-if (result < 10)
+for (i = 0; i < n; i++)
 {
-secound_number = result;
+for (j = 0; j < i; j++)
+{
+_putchar('\\');
+_putchar('\n');
+}
 }
 else
 {
-first_number = result / 10;
-secound_number = result % 100000000000000000;
-_putchar (first_number + '0');
+-putchar('\n');
+}
 }
 
-_putchar (secound_number + '0');
-
-result++;
-}
-i++;
-result = 0;
-_putchar ('\n');
-}
-}

@@ -1,21 +1,22 @@
 #include "main.h"
+
+
 /**
- * print_square - print a square
- * @size: print size
+ * print_square - prints hashtags to make a square
+ * @size: limit
  *
  * Return: void
  */
 
 void print_square(int size)
 {
-int i;
-int k;
+int i, j;
 
 if (size > 0)
 {
 for (i = 0; i < size; i++)
 {
-for (k = 0; k < size; k++)
+for (j = 0; j < size; k++)
 {
 _putchar ('#');
 }
@@ -23,6 +24,7 @@ _putchar ('\n');
 }
 }
 else
+{
 _putchar ('\n');
 }
 }

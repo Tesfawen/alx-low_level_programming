@@ -17,6 +17,7 @@ _putchar('-');
 m = -n;
 }
 else
+{
 m = n;
 }
 if (m / 10 != 0)

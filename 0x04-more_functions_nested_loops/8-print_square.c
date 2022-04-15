@@ -1,6 +1,5 @@
 #include "main.h"
 
-
 /**
  * print_square - prints hashtags to make a square
  * @size: limit
@@ -18,13 +17,13 @@ for (i = 0; i < size; i++)
 {
 for (j = 0; j < size; k++)
 {
-_putchar ('#');
+_putchar('#');
 }
-_putchar ('\n');
+_putchar('\n');
 }
 }
 else
 {
-_putchar ('\n');
+_putchar('\n');
 }
 }

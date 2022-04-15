@@ -1,42 +1,39 @@
 #include "main.h"
+
 /**
- * main - entry point
+ * main - prints Fizz for int divisible by 3 and Buzz for 5
  *
- * Return: void
+ * Return: int
  */
 
 int main(void)
 {
 
-int p = 100;
 int i;
 
 i = 1;
-while (i <= p)
+for (i = 1; i<= 100; i++)
 {
-if (i % 3 == 0 && i % 5 == 0)
+if (i % 3 == 0 && i % 5 != 0)
 {
-printf("FizzBuzz ");
+printf("Fizz");
 }
-else if (i % 3 == 0)
+else if (i % 3 !=0 && i % 5 == 0)
 {
-printf("Fizz ")
+printf("Buzz")
 }
-else if (i % 5 == 0)
+else if (i % 3 == 0 && i % 5 == 0)
 {
-if (i < 0)
-printf("Buzz ");
-
-else
-printf("Buzz");
+printf("FizzBuzz");
 }
 else
 {
-printf("%i ", i);
+printf("%d, i);
 }
-
-i++;
+if (i != 100)
+putchar(' ');
+else
+putchar('\n');
 }
-printf("\n");
 return (0);
 }

@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * print_rev - prints a string in revese order
  *@s: A pointer to an int that will be changed
@@ -17,7 +18,7 @@ i++;
 }
 for (i = i - 1 ; i  >= 0; i--)
 {
-_putvhar (s[i]);
+_putchar (s[i]);
 }
 
 _putchar ('\n');

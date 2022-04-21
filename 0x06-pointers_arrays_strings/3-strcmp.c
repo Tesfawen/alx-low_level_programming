@@ -1,21 +1,19 @@
-#include "main.h"
-#include <stdio.h>
 /**
  * _strcmp - function that compares two strings
  * @s1: string to be compared
  * @s2: string to be compared
- * Return: negative if s1 < s2; 0 if nothing and positive int if s1 > s2
+ * Return: dest
  */
 int _strcmp(char *s1, char *s2)
 {
-int x;
+char *str_one = s1;
+char *str_two = s2;
 
-for (x = 0; s1[x] != '\0' || s2[x] != '\0'; x++)
+while (*str_one != '\0' &&  *str_two != '\0' && *str_one == *str_two)
 {
-
-if (s1[x] != s2[x])
-return (s1[x] - s2[x]);
-}
-return (0);
+str_one++;
+str_two++;
 }
 
+return (*str_one - *str_two);
+}

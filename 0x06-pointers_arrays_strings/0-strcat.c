@@ -1,10 +1,13 @@
 #include "main.h"
 
 /**
- * _strcat - concatenates two strings
+ * _strcat - function that concentenates
+ *           teo strings.
+ *
  * @dest: A pointer to a character that will be changed
  * @src: Apointer to a character that will be updated
- * Return: dest
+ *
+ * Return: pointer to resulting string @dest
  */
 
 char *_strcat(char *dest, char *src)

@@ -1,5 +1,3 @@
-#include "main.h"
-
 /**
  * _strcat - function that concentenates
  *           teo strings.

@@ -8,6 +8,7 @@
  * @size: the size
  *
  * Return: Nothing.
+ */
 
 void print_diagsums(int *a, int size)
 {

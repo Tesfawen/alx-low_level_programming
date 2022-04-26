@@ -1,12 +1,7 @@
 #include <stdio.h>
-#include <string.h>
+#include <main.h>
 
-/*
- * File: 0-memset.c
- * Auth: Brennan D Baraban
- */
 
-#include "holberton.h"
 
 /**
  * memset - Fills the first n bytes of the memory area

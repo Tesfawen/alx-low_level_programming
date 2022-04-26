@@ -5,7 +5,7 @@
  * @dest: dest memory area
  * @src: source memory area
  * @n: bytes from memory area to copy
- * 
+ *
  * Return: memory area replaced
  */
 
@@ -15,7 +15,7 @@ unsigned int a;
 
 for (a = 0; a < n; a++)
 {
-dest [a] = src[a];
+dest[a] = src[a];
 }
 return (dest);
 }

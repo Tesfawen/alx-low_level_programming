@@ -1,48 +1,31 @@
 #include <stdio.h>
 #include <string.h>
 
-/**
- * simple_print_buffer - prints buffer in hexa
- * @buffer: the address of memory to print
- * @size: the size of the memory to print
- *
- * Return: Nothing.
+/*
+ * File: 0-memset.c
+ * Auth: Brennan D Baraban
  */
 
-void simple_print_buffer(char *buffer, unsigned int size)
+#include "holberton.h"
+
+/**
+ * memset - Fills the first n bytes of the memory area
+ *          pointed to by @s with the constant byte @c.
+ * @s: A pointer to the memory area to be filled.
+ * @c: The character to fill the memory area with.
+ * @n: The number of bytes to be filled.
+ *
+ * Return: A pointer to the filled memory area @s.
+ */
+void *_memset(void *s, int c, size_t n)
 {
-        unsigned int i;
+	unsigned int index;
+	unsigned char *memory = s, value = c;
 
-        i = 0;
-        while (i < size)
-        {
-                if (i % 10)
-                {
-                        printf(" ");
-                }
-                if (!(i % 10) && i)
-                {
-                        printf("\n");
-                }
-                printf("0x%02x", buffer[i]);
-                i++;
-        }
-        printf("\n");
+	for (index = 0; index < n; index++)
+		memory[index] = value;
+
+	return (memory);
 }
-
-
-
-int main () {
-   char str[50];
-
-   strcpy(str,"This is string.h library function");
-   puts(str);
-
-   memset(str,'$',7);
-   puts(str);
-   
-   return(0);
-}
-
 
 

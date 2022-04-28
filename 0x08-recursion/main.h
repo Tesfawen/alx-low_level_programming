@@ -16,4 +16,4 @@ int get_length(char *s);
 int palind(char *s, int i);
 int wildcmp(char *s1, char *s2);
 
-#endif /*MAIN_H */
+#endif

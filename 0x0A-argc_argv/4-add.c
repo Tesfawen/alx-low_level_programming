@@ -9,6 +9,7 @@
  *
  * Return: Always 0 (Success)
  */
+int check_num(char *str)
 
 {
 

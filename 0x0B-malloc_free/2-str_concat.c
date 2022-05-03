@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * _strlen - count array
  * @s: array of elements
@@ -22,7 +21,7 @@ return (i);
 }
 
 /**
- * str_concate- back a pointer to array
+ * str_concat - back a pointer to array
  * @s1: Array one
  * @s2: Array two
  * Return: Always on array dinamic
@@ -53,7 +52,7 @@ return (NULL);
 for (i = 0; *(s1 + i) != '\0'; i++)
 *(dst + i) = *(s1 + i);
 
-for (j = 0; *(s1 + j) != '\0'; j++)
+for (j = 0; *(s2 + j) != '\0'; j++)
 {
 *(dst + i) = *(s2 + j);
 i++;

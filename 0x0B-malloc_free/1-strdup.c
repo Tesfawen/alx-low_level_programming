@@ -64,7 +64,7 @@ dst = (char *)malloc(size *sizeof(char));
 
 if (dst == 0)
 {
-return (NULL)
+return (NULL);
 }
 
 _strcpy(dst, str);

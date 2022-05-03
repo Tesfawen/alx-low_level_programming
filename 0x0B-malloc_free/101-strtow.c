@@ -9,9 +9,9 @@ char **strtow(char *str)
 {
 char **ptr;
 int i, k, len, start, end, j = 0;
-int words =  countwords(str);
+int words =  countWords (str);
 
-if (!str || !countwords(str))
+if (!str || !countWords (str))
 return (NULL);
 ptr = malloc(sizeof(char *) * (words + 1));
 if (!ptr)

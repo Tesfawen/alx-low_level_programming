@@ -1,62 +1,41 @@
+#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include <ctype.h>
-#include <string.h>
 
 /**
- * check_num - check - string there are digit
- * @str: array str
+ * main - program that multiplies two numbers
  *
- * Return; Always 0 (Success)
- */
-
-int check_num(char *str)
-
-{
-unsigned int count;
-
-count = 0;
-while (count < strlen(str))
-
-{
-if (!isdigit(str[count]))
-{
-return (0);
-}
-
-count++;
-}
-return (1);
-}
-
-/**
- * main - Print the name of the program
- * @argc: Count arguments
- * @argv: Arguments
+ * @argc: argument count for main
+ * @argv: vector to the arguments
  *
- * return: Always 0 (Success)
+ * Return: void
  */
 
 int main(int argc, char *argv[])
 {
-int count;
-int str_to_int;
-int sum = 0;
-count = 1;
-while (count < argc)
-{
-if (check_num(argv[count]))
-{
-str_to_int = atoi(argv[count]);
-sum += str_to_int;
-}
-else
-{
-printf("Error\n");
-return (1);
-}
-count++;
-}
-printf("%d\n", sum);
-return (0);
+	int i, j;
+	int sum = 0;
+
+	if (argc <= 1)
+	{
+		printf("0\n");
+		return (0);
+	}
+	else if (argc > 1)
+	{
+		for (i = 1; i < argc; i++)
+		{
+			for (j = 0; argv[i][j] != '\0'; j++)
+			{
+				if (!(argv[i][j] >= '0' && argv[i][j] <= '9'))
+				{
+					printf("Error\n");
+					return (1);
+				}
+			}
+			sum += atoi(argv[i]);
+		}
+	}
+	printf("%d\n", sum);
+	return (0);
 }

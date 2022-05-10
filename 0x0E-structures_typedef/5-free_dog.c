@@ -2,17 +2,17 @@
 #include "dog.h"
 
 /**
- * free_dog - free memory - Free memory
- * @d: array
+ * free_dog - free memory
+ *@d: array
  * Description: Free memory for struct
  */
 
 void free_dog(dog_t *d)
 {
-if (d)
-{
-free(d->name);
-free(d->owner);
-free(d);
-}
+	if (d)
+	{
+		free(d->name);
+		free(d->owner);
+		free(d);
+	}
 }
